@@ -101,9 +101,8 @@ h1,h2,h3,h4,h5,h6 {
 .intro__subtitle {
     font-weight: 400;
     font-size: 24px;
+    padding-bottom: 25px;
 }
-
-/*#2378FC*/
 
 .intro__main {
     margin-top: 110px;
@@ -114,9 +113,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .block__main {
     /* margin: 15px; */
+    border-radius: 10px;
     font-size: 24px;
-
+    transition: 2s;
     padding: 30px 40px;
+}
+
+.block__main:hover{
+    transform: scale(1.12) ;
 }
 
 .title__main {
@@ -137,10 +141,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/*Footer
+/*Footer__1
 =====================*/
 .footer__one {
-    padding: 70px 1px;
+    padding: 70px;
     background-color: #2378FC;
 }
 .footer__inner {
@@ -176,3 +180,136 @@ h1,h2,h3,h4,h5,h6 {
     color: #FFC41E;
     border-bottom: 1px solid #FFC41E;
 }
+
+/*Events
+=====================*/
+
+.events {
+    /*margin: 75px 0;*/
+    height: 984px;
+    background-color: #FFC41E;
+    color: #2E373B;
+}
+
+.event__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0 55px;
+}
+.event__all {
+    color: #2E373B;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.3;
+    opacity: 0.5;
+    transition: .2s;
+
+}
+
+.event__all:hover{
+    opacity: 1;
+}
+
+.event__group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.event {
+    padding-right: 30px;
+    width: 33.3333%;
+    text-align: left;
+}
+
+.event__img {
+    padding-bottom: 20px;
+    transition: 1s
+}
+
+.event__img:hover {
+    transform: scale(1.12);
+}
+
+.event__data {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.event__title {
+    color: #F6404F;
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.event__description {
+    padding-bottom: 40px;
+}
+
+
+/*News
+=====================*/
+
+.news {
+    background-color: #FAF3E3;
+    height: 649px;
+    color: #2E373B;
+}
+.news__inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.news__all {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #2E373B;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.news__all:hover{
+    opacity: 1;
+}
+
+.news__data {
+    color: #F6404F;
+}
+
+.news__description{
+    font-size: 21px;
+}
+
+/*Footer__2
+=====================*/
+.footer__two {
+    padding: 70px;
+    background-color: #30BCC9;
+    color: #E0E0E0;
+}
+
+
+/*Social
+=====================*/
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    width: 25px;
+    height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
