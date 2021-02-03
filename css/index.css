@@ -1,7 +1,27 @@
+:root {
+    --white: #fff;
+    --blue: #2378FC;
+    --yellow: #FFC41E;
+    --red: #F6404F;
+    --kpem: #FAF3E3;
+    --dark-green: #2E373B;
+    --turquoise: #30BCC9;
+    --grey-text: #E0E0E0;
+    --grey-icon: #E5E5E5;
+    --yt: #c4302b;
+    --vk: #4c75a3;
+    --fb: #3b5998;
+    --inst: #8a3ab9;
+    --light-size: 14px;
+    --regular-size: 16px;
+    --title-size: 21px;
+
+}
+
 body {
     margin: 0;
-    font-size: 16px;
-    color: #fff;
+    font-size: var(--regular-size);
+    color: var(--white);
 }
 
 *,
@@ -13,7 +33,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -44,7 +64,7 @@ h1,h2,h3,h4,h5,h6 {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--white);
 }
 
 .header__inner {
@@ -125,7 +145,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro__about {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: var(--light-size);
     font-weight: 400;
     line-height: 1.4;
     opacity: .8;
@@ -140,7 +160,7 @@ h1,h2,h3,h4,h5,h6 {
 =====================*/
 .footer__one {
     padding: 70px 0;
-    background-color: #2378FC;
+    background-color: var(--blue);
 }
 .footer__inner {
     display: grid;
@@ -160,18 +180,22 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     transition: color .1s linear;
 }
+.footer__subtitle_text {
+    color: var(--red);
+}
 
 .footer__subtitle_p {
-    margin-bottom: 15px;
+    color: var(--white);
+    padding-bottom: 15px;
 }
 
 .footer__subtitle {
-
+    color: var(--white);
 }
 
 .footer__subtitle:hover {
-    color: #FFC41E;
-    border-bottom: 1px solid #FFC41E;
+    color: var(--yellow);
+    border-bottom: 1px solid var(--yellow);
 }
 
 /*===============Events
@@ -179,7 +203,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .events {
     height: 984px;
-    background-color: #FFC41E;
+    background-color: var(--yellow);
     color: #2E373B;
 }
 
@@ -192,7 +216,7 @@ h1,h2,h3,h4,h5,h6 {
 .event__all {
     color: #2E373B;
     font-weight: 500;
-    font-size: 21px;
+    font-size: var(--title-size);
     line-height: 1.3;
     opacity: 0.5;
     transition: .2s;
@@ -230,13 +254,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .event__data {
-    font-size: 14px;
+    font-size: var(--light-size);
     padding-bottom: 10px;
 }
 
 .event__title {
-    color: #F6404F;
-    font-size: 21px;
+    color: var(--red);
+    font-size: var(--title-size);
     padding-bottom: 10px;
 }
 
@@ -249,7 +273,7 @@ h1,h2,h3,h4,h5,h6 {
 =====================*/
 
 .news {
-    background-color: #FAF3E3;
+    background-color: var(--kpem);
     height: 649px;
     color: #2E373B;
 }
@@ -277,9 +301,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .news__all {
     font-weight: 500;
-    font-size: 21px;
+    font-size: var(--title-size);
     line-height: 1.3;
-    color: #2E373B;
+    color: var(--dark-green);
     opacity: 0.5;
     transition: 1s;
 }
@@ -298,14 +322,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .news__data {
-    font-size: 16px;
+    font-size: var(--regular-size);
     font-weight: 400;
-    color: #F6404F;
+    color: var(--red);
 }
 
 .news__description{
     font-weight: 700;
-    font-size: 21px;
+    font-size: var(--title-size);
 }
 
 /*============Footer__2
@@ -313,7 +337,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .footer__two {
     padding: 60px;
-    background-color: #30BCC9;
+    background-color: var(--turquoise);
+    /*color: var(--grey-text)*/
+}
+
+.footer__up {
+    color: var(--grey-text)
 }
 
 
@@ -330,18 +359,18 @@ h1,h2,h3,h4,h5,h6 {
 
 .social__icons {
     display: flex;
-    fill: #E5E5E5;
+    padding: 0 20px;
+    fill: var(--grey-icon);
 }
 
 .social__icon__yt{
     width: 35px;
     height: 35px;
-
     transition: .2s linear;
 }
 
 .social__icon__yt:hover {
-    fill: #c4302b;
+    fill: var(--yt);
 }
 
 .social__icon__vk {
@@ -351,26 +380,26 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .social__icon__vk:hover {
-    fill:  #4c75a3;
+    fill:  var(--vk);
 }
 
 .social__icon__fb {
-    height: 25px;
+    height: 35px;
     width: 35px;
     margin-right: 4px;
     transition: .2s linear;
 }
 
 .social__icon__fb:hover {
-    fill: #3b5998;
+    fill: var(--fb);
 }
 
 .social__icon__inst{
     height: 35px;
-    width: 25px;
+    width: 35px;
     transition: .2s linear;
 }
 
 .social__icon__inst:hover {
-    fill: #8a3ab9;
+    fill: var(--inst);
 }
