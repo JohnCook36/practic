@@ -20,11 +20,10 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
-/*Container
+/*============Container
 =====================*/
 
 .container {
-    /* margin: 0 405px 0 405px; */
     max-width: 1112px;
     margin: 0 auto;
     width: 100%;
@@ -35,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
 }
 
-/*Header
+/*===============Header
 =====================*/
 
 .header {
@@ -74,7 +73,7 @@ h1,h2,h3,h4,h5,h6 {
     opacity: 1;
 }
 
-/*Intro
+/*================Intro
 =====================*/
 .intro{
     display: flex;
@@ -87,14 +86,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .intro__inner {
-
 }
 
 .intro__title {
     font-size: 64px;
     font-weight: 700;
     line-height: 1.6;
-    color: #fff;
     text-transform: uppercase;
 }
 
@@ -124,7 +121,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .title__main {
-    /* padding: 30px 40px 0; */
 }
 
 .intro__about {
@@ -140,20 +136,18 @@ h1,h2,h3,h4,h5,h6 {
     opacity: 1;
 }
 
-
-/*Footer__1
+/*============Footer__1
 =====================*/
 .footer__one {
-    padding: 70px;
+    padding: 70px 0;
     background-color: #2378FC;
 }
 .footer__inner {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .footer__block{
-    width: 25%;
     text-align: left;
 }
 
@@ -163,7 +157,6 @@ h1,h2,h3,h4,h5,h6 {
     font-style: normal;
     font-weight: 500;
     line-height: 1.3;
-    color: #fff;
     text-transform: uppercase;
     transition: color .1s linear;
 }
@@ -181,11 +174,10 @@ h1,h2,h3,h4,h5,h6 {
     border-bottom: 1px solid #FFC41E;
 }
 
-/*Events
+/*===============Events
 =====================*/
 
 .events {
-    /*margin: 75px 0;*/
     height: 984px;
     background-color: #FFC41E;
     color: #2E373B;
@@ -195,7 +187,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 75px 0 55px;
+    padding: 75px 0;
 }
 .event__all {
     color: #2E373B;
@@ -204,21 +196,28 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.3;
     opacity: 0.5;
     transition: .2s;
-
 }
 
 .event__all:hover{
     opacity: 1;
+    border-bottom: 1px solid #2E373B;
 }
 
 .event__group {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .event {
-    padding-right: 30px;
-    width: 33.3333%;
+    display: grid;
     text-align: left;
+}
+
+.news__text {
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .event__img {
@@ -242,11 +241,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .event__description {
-    padding-bottom: 40px;
+    padding-bottom: 18px;
 }
 
 
-/*News
+/*=================News
 =====================*/
 
 .news {
@@ -254,11 +253,26 @@ h1,h2,h3,h4,h5,h6 {
     height: 649px;
     color: #2E373B;
 }
+
+.column {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding-top: 75px;
+}
+.news__column__left {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3em;
+}
+
+.news__column__right {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+}
+
 .news__inner{
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    padding-top: 75px;
 }
 
 .news__all {
@@ -270,28 +284,40 @@ h1,h2,h3,h4,h5,h6 {
     transition: 1s;
 }
 
-.news__all:hover{
+.news__all:hover {
     opacity: 1;
+    border-bottom: 1px solid #2E373B;
+}
+
+.news__text{
+    margin: 15px 0;
+}
+
+.news__group {
+    display: flex;
 }
 
 .news__data {
+    font-size: 16px;
+    font-weight: 400;
     color: #F6404F;
 }
 
 .news__description{
+    font-weight: 700;
     font-size: 21px;
 }
 
-/*Footer__2
+/*============Footer__2
 =====================*/
+
 .footer__two {
-    padding: 70px;
+    padding: 60px;
     background-color: #30BCC9;
-    color: #E0E0E0;
 }
 
 
-/*Social
+/*===============Social
 =====================*/
 
 .social {
@@ -299,17 +325,52 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .social__item {
-    width: 25px;
-    height: 24px;
+    padding-right: 5px;
 }
 
+.social__icons {
+    display: flex;
+    fill: #E5E5E5;
+}
 
+.social__icon__yt{
+    width: 35px;
+    height: 35px;
 
+    transition: .2s linear;
+}
 
+.social__icon__yt:hover {
+    fill: #c4302b;
+}
 
+.social__icon__vk {
+    height: 35px;
+    width: 45px;
+    transition: .2s linear;
+}
 
+.social__icon__vk:hover {
+    fill:  #4c75a3;
+}
 
+.social__icon__fb {
+    height: 25px;
+    width: 35px;
+    margin-right: 4px;
+    transition: .2s linear;
+}
 
+.social__icon__fb:hover {
+    fill: #3b5998;
+}
 
+.social__icon__inst{
+    height: 35px;
+    width: 25px;
+    transition: .2s linear;
+}
 
-
+.social__icon__inst:hover {
+    fill: #8a3ab9;
+}
