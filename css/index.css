@@ -4,7 +4,7 @@
     --yellow: #FFC41E;
     --red: #F6404F;
     --kpem: #FAF3E3;
-    --dark-green: #2E373B;
+    --dark-green: #2e373b;
     --turquoise: #30BCC9;
     --grey-text: #E0E0E0;
     --grey-icon: #E5E5E5;
@@ -68,26 +68,24 @@ h1,h2,h3,h4,h5,h6 {
     left: 0;
     z-index: 3;
     border-bottom: 1px solid var(--white);
+    font-family: sans-serif;
 }
 
 .header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     max-width: 1560px;
     margin: 0 auto;
 }
 
 .header__logo{
-    /* margin-left: 90px; */
     height: 24px;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-
 }
 
 .nav__link {
@@ -128,6 +126,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .intro__inner {
+    font-family: sans-serif;
     display: inline;
     margin-top: 200px;
 }
@@ -149,7 +148,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .intro__about__left {
-    font-size: var(--light-size);
+    font-size: var(--regular-size);
     font-weight: 400;
     line-height: 1.4;
     opacity: .8;
@@ -158,7 +157,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro__about__left:hover {
     opacity: 1;
-    border-bottom: 1px solid var(--white);
+    text-decoration: underline;
 }
 
 .intro__main {
@@ -181,10 +180,8 @@ h1,h2,h3,h4,h5,h6 {
     transform: scale(1.04);
 }
 
-.title__main {
-}
-
 .intro__about {
+    font-family: sans-serif;
     margin-top: 15px;
     font-size: var(--light-size);
     font-weight: 400;
@@ -195,7 +192,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro__about:hover {
     opacity: 1;
-    border-bottom: 1px solid var(--white);
+    text-decoration: underline;
 }
 
 /*============Footer__1
@@ -211,36 +208,34 @@ h1,h2,h3,h4,h5,h6 {
 
 .footer__block{
     margin: 70px 0;
-    text-align: left;
 }
 
 .footer__title {
+    font-family: sans-serif;
     margin-bottom: 30px;
     flex-wrap: wrap;
     font-weight: 500;
     line-height: 1.3;
-    text-transform: uppercase;
     transition: color .1s linear;
 }
 
-.footer__subtitle_p {
-    color: var(--white);
-    margin-bottom: 15px;
-}
-
 .footer__subtitle {
+    display: block;
+    margin-bottom: 15px;
     color: var(--white);
+    transition: .1s linear;
 }
 
 .footer__subtitle:hover {
     color: var(--yellow);
-    border-bottom: 1px solid var(--yellow);
+    text-decoration: underline var(--yellow);
 }
 
 /*===============Events
 =====================*/
 
 .events {
+    font-family: sans-serif;
     background-color: var(--yellow);
     color: #2E373B;
 }
@@ -265,7 +260,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .event__all:hover{
     opacity: 1;
-    border-bottom: 1px solid #2E373B;
+    text-decoration: underline var(--dark-green);
 }
 
 .event__group {
@@ -274,13 +269,11 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-rows: repeat(2, 384px);
     grid-row-gap: 40px;
     grid-column-gap: 30px;
-
     margin: 55px 0 79px;
 }
 .event {
     display: grid;
     text-align: left;
-
     cursor: pointer;
 }
 
@@ -310,14 +303,12 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 10px;
 }
 
-.event__description {
-}
-
 
 /*=================News
 =====================*/
 
 .news {
+    font-family: sans-serif;
     background-color: var(--kpem);
     color: #2E373B;
 }
@@ -357,7 +348,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .news__all:hover {
     opacity: 1;
-    border-bottom: 1px solid #2E373B;
+    text-decoration: underline var(--dark-green);
 }
 
 .news__img__left {
@@ -408,7 +399,6 @@ h1,h2,h3,h4,h5,h6 {
     font-size: var(--regular-size);
     font-weight: 400;
     color: var(--red);
-
     margin-bottom: 14px;
 }
 
@@ -421,6 +411,7 @@ h1,h2,h3,h4,h5,h6 {
 =====================*/
 
 .footer__two {
+    font-family: sans-serif;
     background-color: var(--turquoise);
     font-size: var(--light-size);
 }
@@ -438,23 +429,18 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 30px;
 }
 
-.footer__bot__subtitle {
+.footer__bot__subtitle{
     display: block;
     margin-bottom: 10px;
-    transition: color .1s linear;
-}
-
-.footer__bot__subtitle_a{
     font-size: var(--light-size);
     color: var(--grey-text);
+    transition: .1s linear;
 }
 
-.footer__bot__subtitle_a:hover {
+.footer__bot__subtitle:hover {
     color: var(--yellow);
-    border-bottom: 1px solid var(--yellow);
+    text-decoration: underline var(--yellow);
 }
-
-
 
 /*===============Social
 =====================*/
