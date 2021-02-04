@@ -11,7 +11,7 @@
     --yt: #c4302b;
     --vk: #4c75a3;
     --fb: #3b5998;
-    --inst: #8a3ab9;
+    --inst: #833ab4;
     --light-size: 14px;
     --regular-size: 16px;
     --title-size: 21px;
@@ -454,11 +454,15 @@ h1,h2,h3,h4,h5,h6 {
 .social__icon__inst{
     height: 35px;
     width: 35px;
+    border-radius: 10px;
     transition: .2s linear;
 }
 
 .social__icon__inst:hover {
-    fill: var(--inst);
+    border-radius: 10px;
+    fill: var(--white);
+    background: var(--inst);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 4%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 100%);
 }
 
 /*============Subscribe
