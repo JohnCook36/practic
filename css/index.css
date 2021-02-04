@@ -158,6 +158,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro__about__left:hover {
     opacity: 1;
+    border-bottom: 1px solid var(--white);
 }
 
 .intro__main {
@@ -194,6 +195,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro__about:hover {
     opacity: 1;
+    border-bottom: 1px solid var(--white);
 }
 
 /*============Footer__1
