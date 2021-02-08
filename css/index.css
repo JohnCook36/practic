@@ -147,14 +147,14 @@ img:hover {
 
 .intro__inner {
     font-family: sans-serif;
-    display: inline;
+    display: flex;
+    flex-direction: column;
 }
 
 .intro__title {
     font-size: 64px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 35px;
     cursor: pointer;
 }
 
@@ -162,11 +162,12 @@ img:hover {
     display: flex;
     font-weight: 400;
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-top: 35px;
     cursor: pointer;
 }
 
 .intro__about__left {
+    margin-top: 25px;
     font-size: var(--regular-size);
     font-weight: 400;
     line-height: 1.4;
@@ -228,10 +229,14 @@ img:hover {
     font-family: sans-serif;
     font-weight: 500;
     line-height: 1.3;
-    margin-bottom: 30px;
 }
+
+.footer__subtitle:first-of-type {
+    margin-top: 30px;
+}
+
 .footer__subtitle {
-    display: block;
+    display: flex;
     transition: .1s linear;
 }
 
@@ -241,7 +246,7 @@ img:hover {
 }
 
 .footer__subtitle-up {
-    margin-bottom: 15px;
+    margin-top: 15px;
     color: var(--white);
 }
 
@@ -286,7 +291,8 @@ img:hover {
     margin: 55px 0 79px;
 }
 .event {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     cursor: pointer;
 }
@@ -302,13 +308,17 @@ img:hover {
 
 .event__data {
     font-size: var(--light-size);
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .event__title {
     color: var(--red);
     font-size: var(--title-size);
-    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.event__title ~ p {
+    margin-top: 10px;
 }
 
 
@@ -363,10 +373,10 @@ img:hover {
     font-size: var(--regular-size);
     font-weight: 400;
     color: var(--red);
-    margin-bottom: 14px;
 }
 
 .news__text-description{
+    margin-top: 14px;
     font-weight: 700;
     font-size: 19px;
 }
@@ -390,18 +400,22 @@ img:hover {
 .footer__bot__title {
     font-weight: 500;
     line-height: 1.3;
-    margin-bottom: 30px;
 }
 
 .footer__subtitle-bot{
-    margin-bottom: 10px;
+    height: auto;
+    margin-top: 10px;
     color: var(--grey-text);
+}
+
+.marketplace:first-of-type {
+    margin-top: 30px;
 }
 
 .marketplace {
     width: 160px;
     height: auto;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 /*===============Social
@@ -410,15 +424,17 @@ img:hover {
 .social__item {
     font-weight: 500;
     line-height: 1.3;
+    cursor: pointer;
 }
 
 .social__icons {
     display: flex;
     fill: var(--grey-icon);
-    cursor: pointer;
+    margin-top: 30px;
 }
 
 .icon {
+    cursor: pointer;
     margin-right: 30px;
 }
 
